@@ -21,7 +21,7 @@ variable "ec2_instance_tags" {
 variable "image_id" {
   type        = string
   description = "The id of the machine image (AMI) to use for the server."
-  default     = "ami-0779c326801d5a843"
+  default     = "ami-06317a46ed624c0e3"
 
   validation {
     condition     = length(var.image_id) > 4 && substr(var.image_id, 0, 4) == "ami-"
